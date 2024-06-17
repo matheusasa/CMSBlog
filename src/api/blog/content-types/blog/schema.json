@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Sumario": {
+      "type": "string",
+      "required": true
+    },
+    "Destaque": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Conteudo": {
+      "type": "richtext",
+      "required": true
+    },
+    "Categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Teste1",
+        "Teste2",
+        "Teste3"
+      ],
+      "required": true,
+      "default": "Teste1"
+    },
+    "ImagemContent": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
