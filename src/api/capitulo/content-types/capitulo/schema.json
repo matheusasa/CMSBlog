@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capitulos",
+  "info": {
+    "singularName": "capitulo",
+    "pluralName": "capitulos",
+    "displayName": "Capitulos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "atividades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::atividade.atividade"
+    },
+    "aulas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aula.aula"
+    }
+  }
+}

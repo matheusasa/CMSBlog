@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aulas",
+  "info": {
+    "singularName": "aula",
+    "pluralName": "aulas",
+    "displayName": "Aulas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nomeaula": {
+      "type": "string"
+    },
+    "Aula": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Descricao": {
+      "type": "text"
+    }
+  }
+}

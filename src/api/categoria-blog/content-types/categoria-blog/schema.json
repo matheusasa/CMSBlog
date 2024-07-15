@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_blogs",
+  "info": {
+    "singularName": "categoria-blog",
+    "pluralName": "categoria-blogs",
+    "displayName": "Categoria-Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Descricao": {
+      "type": "text"
+    }
+  }
+}

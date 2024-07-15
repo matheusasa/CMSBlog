@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provas",
+  "info": {
+    "singularName": "prova",
+    "pluralName": "provas",
+    "displayName": "Provas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Pergunta1": {
+      "type": "string"
+    },
+    "Pergunta2": {
+      "type": "string"
+    },
+    "Pergunta3": {
+      "type": "string"
+    },
+    "Pergunta4": {
+      "type": "string"
+    },
+    "Pergunta5": {
+      "type": "string"
+    }
+  }
+}

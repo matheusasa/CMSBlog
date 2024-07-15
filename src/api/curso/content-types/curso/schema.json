@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "singularName": "curso",
+    "pluralName": "cursos",
+    "displayName": "Cursos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "capitulos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::capitulo.capitulo"
+    },
+    "prova": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::prova.prova"
+    }
+  }
+}
